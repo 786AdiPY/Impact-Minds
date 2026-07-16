@@ -1,0 +1,48 @@
+:root {
+  --bg:        #05100c;
+  --bg-2:      #081a13;
+  --panel:     rgba(12, 30, 23, 0.72);
+  --panel-2:   rgba(9, 22, 17, 0.9);
+  --border:    rgba(55, 224, 166, 0.14);
+  --border-2:  rgba(55, 224, 166, 0.28);
+  --emerald:   #37e0a6;
+  --emerald-d: #1f9d76;
+  --text:      #e7f3ee;
+  --text-dim:  #8fb3a6;
+  --text-mut:  #5c7a70;
+  --crit:      #ff7a1a;
+  --high:      #ff9f43;
+  --med:       #ffd23f;
+  --font: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  --mono: 'JetBrains Mono', 'SF Mono', ui-monospace, Menlo, monospace;
+}
+
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
+body {
+  font-family: var(--font);
+  color: var(--text);
+  background:
+    radial-gradient(1200px 700px at 85% -10%, rgba(31, 157, 118, 0.35), transparent 60%),
+    radial-gradient(900px 600px at 10% 110%, rgba(31, 157, 118, 0.18), transparent 55%),
+    linear-gradient(160deg, #04120d 0%, #05100c 45%, #030a08 100%);
+  background-attachment: fixed;
+  min-height: 100vh;
+  -webkit-font-smoothing: antialiased;
+}
+
+body::before {
+  content: ''; position: fixed; inset: 0; z-index: 0; pointer-events: none;
+  background:
+    linear-gradient(115deg, transparent 40%, rgba(55, 224, 166, 0.04) 40.2%, rgba(55, 224, 166, 0.04) 41%, transparent 41.2%),
+    linear-gradient(115deg, transparent 62%, rgba(55, 224, 166, 0.05) 62.2%, rgba(55, 224, 166, 0.05) 63%, transparent 63.2%);
+}
+
+button { font-family: var(--font); cursor: pointer; border: none; background: transparent; color: inherit; }
+::-webkit-scrollbar { width: 9px; height: 9px; }
+::-webkit-scrollbar-thumb { background: rgba(55, 224, 166, 0.18); border-radius: 8px; }
+::-webkit-scrollbar-track { background: transparent; }
+
+.mono { font-family: var(--mono); }
+.dim { color: var(--text-dim); }
+.mut { color: var(--text-mut); }
