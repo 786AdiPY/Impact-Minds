@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="assets/banner.png" alt="GLINT Banner" width="100%" />
+<img src="https://raw.githubusercontent.com/786AdiPY/Impact-Minds/main/src/assets/banner.png" width="100%">
 </p>
 
 <div align="center">
